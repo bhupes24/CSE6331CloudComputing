@@ -27,5 +27,5 @@ class PeopleModel(db.Model):
         self.keywords = keywords
 
     def __repr__(self):
-        return f"'id':{self.id}, 'name':{self.name}, 'keywords':{self.keywords}, 'salary':{self.salary}, 'picture':{self.picture}"
+        return f"'id':{self.id}, 'name':{self.name}, 'keywords':{self.keywords}, 'salary':{self.salary}, 'picture':{self.picture}, 'grade':{self.grade}, 'room':{self.room}', telnum':{self.telnum}, 'state':{self.state}"
 

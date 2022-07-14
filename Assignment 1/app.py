@@ -41,7 +41,7 @@ def loadpeopledata():
                     continue
                 people = PeopleModel( name=row[0], state=row[1], salary=row[2], grade=row[3], room=row[4], telnum=row[5], picture=row[6], keywords=row[7])
                 people_list.append(people)
-                print(people_list)
+                print(people)
             try:
                 db.session.bulk_save_objects(people_list)
                 db.session.commit()
